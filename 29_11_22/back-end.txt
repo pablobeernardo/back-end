@@ -27,3 +27,33 @@
 
 
 Tarefa: Fazer um programa (algoritmo nas 3 formas "narrativa, portugol, fluxograma") que calcule o valor do imposto de renda baseado num salario. (alíquota 7.5%)
+
+Narrativa:
+
+1- pedir ao usuário para informar o valor do salario > 0
+    1.1 - verificar se o valor é > 0
+    1.2 - se sim, armazenar esse valor
+    1.3 - senão, exibir que o valor está incorreto, e pedir para informar o valor novamente.
+2- pedir ao usuário para confirmar a alíquota de (7,5%)
+    2.1 - se confirmado, guardar alíquota
+    2.2 - senão, fim do fluxo 
+3- pedir ao usuário para confirmar a multiplicação do salário pela alíquota de (7,5%)
+4- Calcular a multiplicação salario x alíquota
+5- Guardar resultado do imposto.
+6- Exibir o valor do imposto para o usuario.
+
+Pseudocodio
+
+var salario
+var imposto
+const aliquota = 7.5
+
+escreva("Informe o valor do salário:")
+    leia(salario)
+
+imposto = salario * aliquota 
+    
+escreva("o valor do imposto é:" +imposto)
+
+
+Fluxograma
