@@ -1,0 +1,29 @@
+1- Abrir o google chrome
+    1.1- verificar se há conexão de internet 
+    1.2- se sim, exibir o site da pagina inicial
+    1.3- senão, exibir mensagem que não há conexão 
+2- Digitar o site da apple na barra de endereço
+3- Pesquisar o Macbook no site
+4- Escolher o modelo que eu quero
+5- Clicar para comprar 
+6- Inserir os meus dados no site (cartão, endereço e etc)
+7- Escolher forma de pagamento
+8- Confirmar a compra 
+
+
+
+
+1- Pedir ao usuário para informar o primeiro número inteiro
+    1.1 - Verificar se é um número inteiro 
+    1.2 - se sim, guardar o primeiro número
+    1.3 - senão pedir para informar um número inteiro
+2- Pedir ao usuário para informar o segundo número          
+    2.1 - Verificar se é um número inteiro 
+    2.2 - Se sim, Guardar o segundo número
+    2.3 - senão pedir para informar um número inteiro
+3- Somar o primeiro número com o segundo número
+    3.1 - Guardar resultado.
+4- Exibir o resultado da soma    
+
+
+Tarefa: Fazer um programa (algoritmo nas 3 formas "narrativa, portugol, fluxograma") que calcule o valor do imposto de renda baseado num salario. (alíquota 7.5%)
