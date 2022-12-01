@@ -1,0 +1,143 @@
+1- Abrir o google chrome
+    1.1- verificar se há conexão de internet 
+    1.2- se sim, exibir o site da pagina inicial
+    1.3- senão, exibir mensagem que não há conexão 
+2- Digitar o site da apple na barra de endereço
+3- Pesquisar o Macbook no site
+4- Escolher o modelo que eu quero
+5- Clicar para comprar 
+6- Inserir os meus dados no site (cartão, endereço e etc)
+7- Escolher forma de pagamento
+8- Confirmar a compra 
+
+
+
+
+1- Pedir ao usuário para informar o primeiro número inteiro
+    1.1 - Verificar se é um número inteiro 
+    1.2 - se sim, guardar o primeiro número
+    1.3 - senão pedir para informar um número inteiro
+2- Pedir ao usuário para informar o segundo número          
+    2.1 - Verificar se é um número inteiro 
+    2.2 - Se sim, Guardar o segundo número
+    2.3 - senão pedir para informar um número inteiro
+3- Somar o primeiro número com o segundo número
+    3.1 - Guardar resultado.
+4- Exibir o resultado da soma    
+
+
+Tarefa: Fazer um programa (algoritmo nas 3 formas "narrativa, portugol, fluxograma") que calcule o valor do imposto de renda baseado num salario. (alíquota 7.5%)
+
+Narrativa:
+
+1- pedir ao usuário para informar o valor do salario > 0
+    1.1 - verificar se o valor é > 0
+    1.2 - se sim, armazenar esse valor
+    1.3 - senão, exibir que o valor está incorreto, e pedir para informar o valor novamente.
+2- pedir ao usuário para confirmar a alíquota de (7,5%)
+    2.1 - se confirmado, guardar alíquota
+    2.2 - senão, fim do fluxo 
+3- pedir ao usuário para confirmar a multiplicação do salário pela alíquota de (7,5%)
+4- Calcular a multiplicação salario x alíquota
+5- Guardar resultado do imposto.
+6- Exibir o valor do imposto para o usuario.
+
+Pseudocodigo
+
+var salario
+var imposto
+const aliquota = 7.5
+
+readln("Informe o valor do salário:", salario);
+    
+imposto = salario * aliquota ;
+    
+writeln("o valor do imposto é:", imposto);
+
+<!---------------------------------------------------------------------------------->
+
+Tarefa - Escrever um programa que baseado no valor do salario vai informar ao usuario a alíquota do imposto de renda, usando a seguinte tabela:
+Base de cálculo do Imposto de Renda
+Até R$1.903,98	Isento	
+De R$1.903,99 até R$2.826,65	7,5%	
+De R$2.826,66 até R$3.751,05	15%	 
+De R$3.751,06 até R$4.664,68	22,5%	
+Acima de R$4.664,68	27,5%	
+
+NARRATIVA 
+1- Solicitar valor ao usuário
+
+2- se salario for menor ou igual que R$1.903,98
+    entao escreva "Você está livre do Leão"
+
+3- se salario for maior que R$1.903,98 e menor que R$2.826,66    
+    entao escreva:  "Sua alíquota é de 7,5%"
+
+4- se salario for maior que R$2.826,65 e menor que R$3.751,05    
+    entao escreva:  "Sua alíquota é de 15%"
+
+5- se salario for maior que R$3.751,05 e menor que R$4.664,68    
+    entao escreva:  "Sua alíquota é de 22,5%"
+
+6- se salario for maior que R$4.664,68 
+    entao escreva: "Sua alíquota é de 27,5%"
+
+PSEUDOCODIGO 
+
+var salario;
+const aliquota1 = "Isento"; 
+const aliquota2 = "7,5%";
+const aliquota3 = "15%";
+const aliquota4 = "22,5%";
+const aliquota5 = "27,5%";
+
+readln("Informe o valor do salario:", salario);
+
+if(salario <= 1.903,98 )then
+    writeln("Sua alíquota é:", aliquota1);
+
+
+elseif(salario >= 1.903,99 and <= 2.826,65 )then
+    writeln("Sua alíquota é:", aliquota2);
+
+elseif(salario >= 2.826,66 and <= 3.751,05 )then
+    writeln("Sua alíquota é:", aliquota3);
+
+
+elseif(salario >= 3.751,06 and  <= 4.664,68 )then
+    writeln("Sua alíquota é:", aliquota4);
+
+
+else
+    writeln("Sua alíquota é:", aliquota5);
+
+
+
+
+Exercicio tipos de dados
+(R) 0.21
+(I) 1
+(B) V
+(L) “0.”
+(N) 1%
+(L) “José”
+(R) 0,35
+(N) .F.
+(R) -0.001
+
+(N) .T.
+(I) +3257
+(L) “a”
+(L) “+3257”
+(N) +3257.
+(L) “-0.0”
+(L) “.F.”
+(N) ± 3
+
+(N) .V.
+(N) .V
+(L) “abc”
+(B) F
+(N) C
+(N) Maria
+(I) +36
