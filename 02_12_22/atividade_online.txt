@@ -1,0 +1,106 @@
+Faça um algoritmo que solicite ao usuario 2 numeros, e escreva para o usuário uma resposta
+informando qual dentre os dois numeros digitados é o maior. Faça o algoritmo nas suas 3 formas.
+
+NARRATIVA   
+
+1- Solitar ao usuario para informar um numero
+2- Guardar o primeiro numero
+3- Solitar ao usuario para informar outro numero diferente do primeiro
+4- Guardar o segundo numero
+5- Calcular qual dos dois numero é o maior
+6- Guardar o resultado
+7- Exibir para o usuário o resultado (qual numero é o maior)
+
+
+PSEUDOCÓDIGO
+
+var primeiro_numero;
+var segundo_numero;
+
+readln("Informe um numero", primeiro_numero);
+
+readln("Agora informe outro numero diferente do primeiro", segundo_numero);
+
+if(primeiro_numero > segundo_numero)
+    writeln("O número maior é o:", primeiro_numero);
+
+else 
+    writeln("O número maior é o:", segundo_numero);
+    
+
+=======================================================================
+                        Atividades em casa 
+Tarefa - 1
+
+Façam um algoritimo que vai receber Idade, Nome e telefone
+E vai escrever a seguinte mensagem: Olá, seu nome é [NOME] você tem [IDADE], e seu telefone é [TELEFONE]
+
+
+NARRATIVA   
+1- Solitar e guardar ao usuario Idade
+2- Solitar e guardar ao usuario Nome
+3- Solitar e guardar ao usuario telefone
+4- Exibir a seguinte mensagem Olá, seu nome é [NOME] você tem [IDADE], e seu telefone é [TELEFONE]
+
+PSEUDOCÓDIGO
+
+var idade_usuario 
+var nome_usuario; 
+var telefone_usuario
+
+readln("Informe seu nome", nome_usuario);
+readln("Informe sua idade", idade_usuario);
+readln("Informe seu telefone", telefone_usuario);
+
+writeln("Olá, seu nome é nome_usuario você tem idade_usuario, e seu telefone é telefone_usuario");
+
+---------------
+
+Tarefa - 2
+
+Façam um algoritimo que vai receber dois numeros, 
+e vai mostrar a diferença entre eles, com a seguinte mensagem: 
+A diferença entre os numeros é de: [NUMERO]
+
+NARRATIVA
+1- Solitar ao usuário primeiro numero
+2- Solitar ao usuário segundo numero
+3- Calcular a diferença entre eles
+4- Exibir o resultado com a seguinte mensagem: A diferença entre os numeros é de: [NUMERO]
+
+PSEUDOCÓDIGO
+
+var primeiro_numero;
+var segundo_numero;
+var resultado_dif;
+
+readln("Informe o primeiro número:", primeiro_numero);
+readln("Informe o segundo número:", segundo_numero);
+
+resultado_dif = primeiro_numero - segundo_numero; 
+
+writeln("A diferença entre os numeros é de: resultado_dif");
+
+Tarefa - 3
+
+Façam um algoritimo que vai solicitar ao usuário sua idade e 
+vai mostrar ao usuário caso a idade seja maior que 65 anos: 
+Olá você está na melhor idade!, caso contrario mostre: Olá você está no caminho certo!
+
+NARRATIVA
+
+1- Solitar ao usuário a idade.
+2- Se idade do usuário for maior que 65 anos, exibir : Olá você está na melhor idade!
+3 Senão exibir: Olá você está no caminho certo!
+
+PSEUDOCÓDIGO
+
+var idade_usuario;
+
+readln("Informe sua idade:", idade_usuario);
+
+if(idade_usuario > 65)
+    writeln("Olá você está na melhor idade!");
+
+else 
+    writeln("Olá você está no caminho certo!");    
