@@ -56,4 +56,3 @@ imposto = salario * aliquota
 escreva("o valor do imposto é:" +imposto)
 
 
-Fluxograma

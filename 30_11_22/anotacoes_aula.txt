@@ -121,7 +121,7 @@ Exercicio tipos de dados
 (L) “0.”
 (N) 1%
 (L) “José”
-(R) 0,35
+(N) 0,35
 (N) .F.
 (R) -0.001
 

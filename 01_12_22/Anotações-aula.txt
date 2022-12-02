@@ -1,0 +1,79 @@
+Tarefa 
+Vamos escrever um programa que receba que notas (De 1 a 10), 
+calcule e armazene a média, e no final escreva aprovado caso a média seja maior ou igual a 7, 
+e reprovado caso a média seja menor que 7.
+
+
+
+NARRATIVA
+1- Pedir ao usuario a primeira nota
+2- guardar primeira nota
+3- pedir ao usuario segunda nota
+4- guardar segunda nota
+5- Calcular media entre primeira e segunda nota
+6- guardar media
+7- Se a media for >= 7 exibir para o usuário "Aprovado"
+8- Senão escreva "Aluno reprovado"
+
+---------------------------------------------------
+
+PSEUDOCÓDIGO
+var nota1;
+var nota2;
+var media;
+
+readln("Informe a usa primeira nota:", nota1);
+readln("Informe a usa primeira nota:", nota2);
+
+media = (nota1 + nota2) / 2;
+
+if (media >= 7)then 
+    writeln("APROVADO");
+
+else 
+    writeln("REPROVADO");
+
+--------------------------------------------------------
+Tarefa algoritmo - 
+Faça um algoritmo que vai receber o local de nascimento do usuário,
+e vai  mostrar a seguinte mensagem: Você nasceu em {Nome da cidade}
+
+NARRATIVA
+1- Pedir ao usuario para informar o local de nascimento do usuário
+2- Guardar o local de nascimento 
+3- Exibir a mensagem pro usuario: Você nasceu em {nome da cidade}
+
+PSEUDOCÓDIGO
+
+var cidade;
+
+readln("Informe o local do seu nascimento:", cidade);
+writeln("você nasceu em:", cidade);
+
+
+==========================================================
+Faça um algoritmo que receba do usuario um numero qualquer, 
+faça uma soma deste numero com o numero 10,
+e escreva o resultado com a seguinte mensagem: 
+Você somou [numeroEntrada] mais o numero 10,
+o resultado é [numeroCalculado]
+
+NARRATIVA
+1- Pedir ao usuario para informar um numero
+2- guardar esse numero
+3- somar o numero informado pelo usuario com 10
+4- guardar o resultado
+5- Exibir o resultado para o usuario
+
+PSEUDOCÓDIGO
+
+var numero1;
+const numero2 = 10;
+var soma;
+
+readln("Informe um numero", numero1);
+
+soma = numero1 + numero2
+
+writeln("você somou numero1 mais o numero 10, e o resultado é soma" );
+
