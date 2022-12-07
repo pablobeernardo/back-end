@@ -1,0 +1,28 @@
+Faça um programa que permita ao usuário informar o nome e a quantidade de votos de 2 candidatos,
+no final exiba o nome do candidato vencedor.
+
+NARRATIVA
+1- Solicitar ao usuário o nome do primeiro candidato
+2- Solicitar ao usuário o nome do segundo candidato
+3- Solicitar ao usuário a quantidade de votos do primeiro candidato
+4- Solicitar ao usuário a quantidade de votos do segundo candidato
+5- Calcular qual dos 2 candidatos teve mais votos
+6- Exibir para o usuario o nome do candidato vencedor
+
+PSEUDOCODIGO
+
+var primeiro_candidato;
+var segundo_candidato;
+var votos_primeiro;
+var votos_segundo;
+
+
+readln("Informe o nome do primeiro candidato: ", primeiro_candidato);
+readln("Informe o nome do segundo candidato: ", segundo_candidato);
+readln("Informe a quantidade de votos do primeiro candidato:", votos_primeiro);
+readln("Informe a quantidade de votos do segundo candidato:", votos_segundo);
+
+if (votos_primeiro > votos_segundo)
+    writeln("o candidato primeiro_candidato venceu !");
+
+else writeln("o candidato segundo_candidato venceu !");

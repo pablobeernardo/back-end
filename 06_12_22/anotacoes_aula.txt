@@ -1,0 +1,72 @@
+
+EXERCICIOS NO portugol
+
+
+programa {
+  funcao inicio() {
+
+    inteiro num1
+
+     para(inteiro i = 0; i < 1000; i++){
+     num1 = i * 2
+     escreva("O valor é:", num1)
+     escreva("\n")
+    }
+
+  }
+}
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+programa {
+  funcao inicio() {
+     
+     inteiro num
+     inteiro soma 
+     soma = 0
+
+     
+
+     para(inteiro i = 0; i < 5;  i++){
+        escreva("Digite um numero:")
+        leia(num)
+
+        soma = soma + num 
+     } 
+
+     
+
+        escreva("O Valor da soma é:", soma)
+     
+
+
+
+
+  }
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+programa {
+  funcao inicio() {
+    
+    inteiro num 
+    inteiro calculo
+    inteiro i 
+    
+
+    escreva("Digite um numero:\n")
+    leia(num)
+    
+    para( i = 1; i <= 10; i++){
+    
+    calculo = num * i
+
+    escreva(num, "x" , i, "=" , calculo, "\n")
+
+    }
+    
+  }
+}
