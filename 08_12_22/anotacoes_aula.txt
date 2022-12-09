@@ -1,0 +1,19 @@
+Fizemos exercicos de Logica de programação
+
+* Estudar mais estrutura de repeticoes com vetores 
+exemplo: 
+
+
+programa {
+  funcao inicio() {
+    
+    inteiro posicoes[10]
+
+    para(inteiro i = 0 ; i < 10 ; i++){
+      posicoes[i] = (i + 1) * 5
+
+    }
+
+    escreva(posicoes)
+  }
+}
