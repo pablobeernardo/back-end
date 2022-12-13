@@ -1,0 +1,41 @@
+programa {
+  funcao inicio() {
+
+    inteiro vetorA[10]
+
+    para(inteiro i = 0; i < 10 ; i++ ){
+
+      vetorA[i] = 9 - i
+
+    }
+
+     escreva(vetorA) 
+  }
+}
+
+
+--------------------------------------------------------------
+
+programa {
+  funcao inicio() {
+
+    inteiro vetor_A[10]
+
+    para(inteiro i = 0; i < 10 ; i++ ){
+      se(i == 0){
+        vetor_A[i] = 5
+      }     senao se(vetor_A [i - 1] == 5){
+        vetor_A[i] = 3
+      }
+      senao{
+        vetor_A[i] = 5
+      }
+      escreva(vetor_A[i], " ")
+    }
+
+     
+  }
+}
+
+---------------------------------------------------------------------------------------------------------
+

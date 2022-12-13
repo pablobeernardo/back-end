@@ -1,0 +1,51 @@
+programa {
+  funcao inicio() {
+    
+    inteiro idade[8]
+    inteiro idade_total = 0
+    inteiro media
+    logico idademaior25 [8] = {falso, falso, falso, falso, falso, falso, falso, falso }
+    inteiro maior = 0
+    
+
+    para(inteiro i = 0; i < 8; i++){
+
+      escreva("Digite a idade dos usuários: ")
+      leia(idade[i])
+
+      idade_total = idade_total + idade[i]
+
+       se(idade[i] > maior){
+        maior = idade[i]
+        media = idade_total / 8
+
+    }
+
+      
+
+    }
+      escreva("A média de idade é: ", media)  
+
+      escreva("\n")  
+
+      escreva("A idade maior digitada é: " ,maior)
+
+      escreva("\n")  
+
+      para(inteiro i = 0; i < 8; i++){
+      se(idade[i] == maior){
+
+      escreva("A idade maior foi digitada na posição: " ,maior "\n")
+
+      }
+
+      
+
+      }
+      
+     
+         
+          
+
+  }
+}
