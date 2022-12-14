@@ -1,0 +1,88 @@
+1)
+programa {
+  
+  inteiro num[4]
+  inteiro numMaior = 0
+
+  funcao obterNumeros(){
+
+    para(inteiro i = 0 i < 4 ; i++){
+      escreva("Digite um número: ")
+      leia(num[i])
+
+      se(num[i] > numMaior ){
+        numMaior = num[i]
+      }
+
+    }
+
+    escreva("O maior número digitado é: " ,numMaior)
+  }
+
+
+  funcao inicio() {
+    obterNumeros()   
+  }
+}
+------------------------------------------------------------------------------------------------
+
+2)
+
+
+------------------------------------------------------------------------------------------------
+3)
+programa {
+  real num[5]
+  real media
+  real numTotal = 0.0
+
+  funcao obterNumeros(){
+    para(inteiro i = 0; i < 5; i++){
+
+      escreva("Digite um número: ")
+      leia(num[i])
+
+      numTotal = numTotal + num[i]
+      media = numTotal / 5
+    }
+    
+    escreva(" A média entre os números é : " ,media)
+
+
+  }
+  
+  
+  funcao inicio() {
+    obterNumeros()
+  }
+}
+-------------------------------------------------------------------------------------------------------
+4)
+programa {
+  inteiro quantidadeGlobal = 0 
+
+
+  funcao inicio() {
+    
+    escreva("Digite quantas repetições você deseja: ")
+    leia(quantidadeGlobal)
+    
+    repetidor(quantidadeGlobal)
+  }
+
+  funcao repetidor(inteiro quantidade){
+
+    
+    para(inteiro i = 0; i < quantidade ; i++)
+    
+    escreva("Olá Mundo \n")
+  
+  
+
+
+}
+
+
+
+}
+
