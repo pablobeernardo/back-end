@@ -1,0 +1,61 @@
+programa {
+    
+  inteiro idade[6]
+  inteiro maiorIdade = 0
+  
+  funcao inicio() {
+     
+   repetidor() 
+     
+  }
+
+  funcao repetidor(){
+
+    para(inteiro i = 0; i < 6; i++){
+
+    escreva("Digite uma idade: ")
+    leia(idade[i])
+    
+
+    se(idade[i] > maiorIdade){
+        maiorIdade = idade[i]
+    }
+    
+  }
+  escreva("A idade maior digitada é: " ,maiorIdade)
+
+  
+}
+
+---------------------------------------------------------------------------------------------
+
+programa {
+  
+  real nota[4]
+  real notaMaior = 0
+  real media
+  real notaTotal = 0
+
+  funcao repetidor(){
+  para(inteiro i = 0; i < 4; i++){
+    escreva("Digite sua nota: ")
+    leia(nota[i])  
+
+    se(nota[i] > notaMaior ){
+      notaMaior = nota[i]
+    }
+
+    notaTotal = notaTotal + nota[i]
+    media = notaTotal / 4  
+  }  
+
+    escreva("A maior nota digitada é: " ,notaMaior ,"\n") 
+    escreva("A sua média é: " ,media)
+  }
+  
+  
+   funcao inicio() {
+   repetidor()
+
+  }
+}

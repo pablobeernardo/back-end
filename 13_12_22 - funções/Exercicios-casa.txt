@@ -1,0 +1,71 @@
+1)
+
+
+programa {
+  funcao inicio() {
+    gerador()
+    
+  }
+
+funcao  gerador(){
+  escreva("Olá Mundo!")
+}
+
+
+
+}
+
+
+--------------------------------------------------------
+2) 
+programa {
+  funcao inicio() {
+    repetidor()
+   
+   
+  }
+
+funcao  repetidor(){
+  para(inteiro i = 0; i < 4; i++)
+  
+  escreva("Olá Mundo \n")
+  
+  
+
+
+}
+
+
+
+}
+
+----------------------------------------------------------
+3)
+
+programa {
+  inteiro quantidadeGlobal = 0 
+
+
+  funcao inicio() {
+    
+    escreva("Digite quantas repetições você deseja: ")
+    leia(quantidadeGlobal)
+    
+    repetidor(quantidadeGlobal)
+  }
+
+  funcao repetidor(inteiro quantidade){
+
+    
+    para(inteiro i = 0; i < quantidade ; i++)
+    
+    escreva("Olá Mundo \n")
+  
+  
+
+
+}
+
+
+
+}
