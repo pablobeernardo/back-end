@@ -28,6 +28,32 @@ programa {
 
 2)
 
+programa {
+  
+  inteiro num[6]
+  inteiro numMenor = 9999999999999999999
+
+  funcao obterNumeros(){
+
+    para(inteiro i = 0 i < 6 ; i++){
+      escreva("Digite um número: ")
+      leia(num[i])
+
+      se(num[i] < numMenor ){
+        numMenor = num[i]
+      }
+
+    }
+
+    escreva("O menor número digitado é: " ,numMenor)
+  }
+
+
+  funcao inicio() {
+    obterNumeros()   
+  }
+}
+
 
 ------------------------------------------------------------------------------------------------
 3)
@@ -56,6 +82,52 @@ programa {
     obterNumeros()
   }
 }
+
+OU UTILIZANDO PARAMETROS
+
+programa {
+
+  real num[5]
+  real media
+  real soma = 0.0
+
+
+  funcao segundaConta(){
+  media = soma / 5
+  }
+
+  funcao primeiraConta( real somaNotas ){
+    soma = soma + somaNotas
+  }
+
+  
+  funcao obterNumeros(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite uma nota: ")
+      leia(num[i])
+
+      primeiraConta(num[i])
+      segundaConta()
+
+      
+      
+    }
+
+    escreva("Sua média é: " ,media)
+
+  }
+
+
+
+
+  funcao inicio() {
+  obterNumeros()
+  }
+}
+
+
+
+
 -------------------------------------------------------------------------------------------------------
 4)
 programa {
