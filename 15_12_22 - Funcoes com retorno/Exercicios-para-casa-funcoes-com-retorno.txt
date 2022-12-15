@@ -1,0 +1,90 @@
+1)
+programa {
+  
+  inteiro num1
+
+  funcao inteiro mensagem(inteiro num1){
+    retorne num1
+  }
+
+
+  funcao inicio() {
+    escreva("Digite um número: ")
+    leia(num1)
+
+    escreva("O número digitado foi: " ,mensagem(num1))
+  }
+}
+
+------------------------------------------------------------------------------------------------
+2)
+programa {
+  
+  cadeia texto1 
+
+  funcao cadeia aloMundo(cadeia texto1){
+    escreva("Alô mundo!")
+    leia(texto1)
+    
+    retorne texto1
+
+  }
+
+
+  funcao inicio() {
+    aloMundo(texto1)
+  }
+}
+
+-----------------------------------------------------------------------------------------------
+3)
+
+programa {
+
+inteiro num1, num2, num3
+
+  funcao inteiro calculoSoma(inteiro num1, inteiro num2, inteiro num3){
+     
+     retorne num1 + num2 + num3
+  }
+
+  funcao inicio() {
+    escreva("Digite um numero: ")
+      leia(num1)
+
+      escreva("Digite um numero: ")
+      leia(num2)
+
+      escreva("Digite um numero: ")
+      leia(num3)
+
+      escreva("A soma dos 3 números é: " ,calculoSoma(num1, num2, num3))
+    
+  }
+}
+--------------------------------------------------------------------------------------------
+
+4) 
+programa {
+
+  inteiro quantidadeGlobal = 0 
+    
+  funcao inteiro repetidor(inteiro quantidade){
+
+    
+    para(inteiro i = 0; i < quantidade ; i++)
+    
+    escreva("Bom dia \n")
+    
+
+  }
+
+funcao inicio() {
+    
+    escreva("Digite quantas repetições você deseja: ")
+    leia(quantidadeGlobal)
+    
+    repetidor(quantidadeGlobal)
+  }
+
+}
