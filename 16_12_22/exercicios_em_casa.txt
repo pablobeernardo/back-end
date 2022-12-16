@@ -1,0 +1,164 @@
+1)
+programa {
+
+  cadeia nomeDeFilmes[5]
+
+  funcao obterNomes(){
+    para(inteiro i = 0; i < 5; i++){
+    escreva("Digite o nome de um filme: ")
+    leia(nomeDeFilmes[i])
+    }
+  }
+
+  funcao inicio() {
+    obterNomes()
+  }
+}
+---------------------------------------------------------------------------------------------------
+2)
+
+programa {
+
+  real preco[5]
+
+  funcao real obterPreco(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite o preço: ")
+      leia(preco[i])
+    }
+  }
+
+  funcao inicio() {
+    obterPreco()    
+  }
+}
+
+-----------------------------------------------------------------------------------------------------
+3)
+
+programa {
+
+  cadeia nomeDeFilmes[5]
+  real preco[5] 
+  cadeia sinopse[5]
+
+
+  funcao cadeia obterNomes(){
+    para(inteiro i = 0; i < 5; i++){
+    escreva("Digite o nome de um filme: ")
+    leia(nomeDeFilmes[i])
+    }
+  }
+
+  funcao real obterPreco(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite o preço: ")
+      leia(preco[i])
+    }
+  }
+
+  funcao cadeia obterSinopse(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite a sinopse do filme: ")
+      leia(sinopse[i])
+    }
+
+  }
+
+  funcao cadeia mensagem(){
+    obterNomes()
+    obterPreco()
+    obterSinopse()  
+    
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Filme: " ,nomeDeFilmes[i]," Ingresso: R$ " ,preco[i], " Sinopse: " ,sinopse[i], "\n")
+      }
+    
+
+  }
+
+
+  funcao inicio() {
+    mensagem()
+
+  }
+}
+-------------------------------------------------------------------------------------------------------
+4)
+programa {
+
+  cadeia nomeDeFilmes[5]
+  real preco[5] 
+  cadeia sinopse[5]
+  inteiro popularidade[5]
+
+
+  funcao cadeia obterNomes(){
+    para(inteiro i = 0; i < 5; i++){
+    escreva("Digite o nome de um filme: ")
+    leia(nomeDeFilmes[i])
+    }
+  }
+
+  funcao real obterPreco(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite o preço " + nomeDeFilmes[i] + ":")
+      leia(preco[i])
+    }
+  }
+
+  funcao cadeia obterSinopse(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite a sinopse do filme " + nomeDeFilmes[i] + ":")
+      leia(sinopse[i])
+    }
+
+  }
+
+  funcao inteiro obterPopularidade(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite um numero de 1 a 5 sobre o filme " + nomeDeFilmes[i] + ":")
+      leia(popularidade[i])
+    
+    
+    }
+    
+      
+  }
+  
+  
+
+  funcao cadeia mensagem(){
+    obterNomes()
+    obterPreco()
+    obterSinopse()  
+    obterPopularidade()
+
+    para(inteiro i = 0; i < 5; i++){
+      
+        se(popularidade[i] == 1){
+          escreva("Filme: " ,nomeDeFilmes[i]," Ingresso: R$ " ,preco[i], " Sinopse: " ,sinopse[i], " -Popularidade: 1 - Muito ruim \n")
+        }   senao se(popularidade[i] == 2){
+              escreva("Filme: " ,nomeDeFilmes[i]," Ingresso: R$ " ,preco[i], " Sinopse: " ,sinopse[i], " -Popularidade: 2 - Ruim \n")  
+            }
+            senao se(popularidade[i] == 3){
+              escreva("Filme: " ,nomeDeFilmes[i]," Ingresso: R$ " ,preco[i], " Sinopse: " ,sinopse[i], " -Popularidade: 3 - Peba \n") 
+            }
+            senao se(popularidade[i] == 4){
+              escreva("Filme: " ,nomeDeFilmes[i]," Ingresso: R$ " ,preco[i], " Sinopse: " ,sinopse[i], " -Popularidade: 4 - Bonzinho \n")
+            }
+            senao se(popularidade[i] == 5){
+              escreva("Filme: " ,nomeDeFilmes[i]," Ingresso: R$ " ,preco[i], " Sinopse: " ,sinopse[i], " -Popularidade: 5 - Muito top \n")
+            }     
+      }      
+     
+
+  }
+
+  funcao inicio() {
+    mensagem()
+
+  }
+}
+
+
