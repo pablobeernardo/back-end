@@ -1,0 +1,80 @@
+1)
+
+programa {
+    
+  cadeia nomes[5]
+  cadeia texto1
+
+  funcao inteiro repetidor(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite seu nome: ")
+      leia(nomes[i])
+    }
+  }
+
+  funcao cadeia mensagem(cadeia texto1)
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Bom dia " ,nomes[i] ," é um prazer ter você aqui \n")
+
+    }  
+
+
+    retorne texto1
+
+  } 
+
+  funcao inicio() {
+    repetidor()
+    mensagem(texto1)
+
+
+  }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+2)
+
+programa {
+    
+  cadeia nomes [5]
+  inteiro notas [5]
+  logico aprovados[5] 
+
+  funcao inteiro repetidor(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite seu nome: ")
+      leia(nomes[i])
+    }
+  }
+
+  funcao inteiro obterNotas(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite a sua nota: ")
+      leia(notas[i])
+            
+
+    }  
+
+  funcao logico verificarAprovados(){
+    para(inteiro i = 0; i < 5; i++){
+      
+      se(notas[i] >= 5){
+       aprovados[i] = verdadeiro
+      
+      }
+      senao {
+        aprovados[i] = falso
+      }
+    }
+ 
+  }
+  
+  
+  funcao inicio() {
+    repetidor()
+    obterNotas()
+    verificarAprovados()
+    escreva("Notas" ,aprovados)
+    
+  }
+}
