@@ -1,0 +1,31 @@
+programa {
+  inclua biblioteca Util --> u
+  inteiro matrizGlobal[6][6]
+  const inteiro numComparacao = 3
+
+  funcao inteiro criandoMatriz(){
+    para(inteiro i = 0; i < 6; i++){
+      para(inteiro j = 0; j < 6; j++){
+        matrizGlobal[i][j] = u.sorteia(1,5)
+          escreva(" " ,matrizGlobal[i][j]," ")
+      }    
+      escreva("\n")
+    }
+  }
+
+  funcao inteiro varrendoMatriz(){
+    para(inteiro i = 0; i < 6; i++){
+      para(inteiro j = 0; j < 6; j++){
+        se(matrizGlobal[i][j] == 3){
+          escreva("Na posição: " ,i, " x " ,j, " foi encontrado o número 3","\n")
+        }          
+      }    
+      
+    }
+  }
+
+  funcao inicio() {
+    criandoMatriz()
+    varrendoMatriz()
+  }
+}
