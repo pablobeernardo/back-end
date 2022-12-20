@@ -1,0 +1,37 @@
+programa {
+
+  inteiro nomeMatriz[6][6]={{1,1,1,1,1,1},{1,1,1,1,1,1},{1,1,1,1,1,1},{1,1,1,1,1,1},{1,1,1,1,1,1},{1,1,1,1,1,1}}
+
+
+  funcao inicio() {
+    para(inteiro i = 0; i < 6; i++){
+      para(inteiro j = 0; j < 6; j++){
+        escreva("Linha: " ,i, " x" , " Coluna: " ,j , " Valor na posição: " ,nomeMatriz[i][j], "\n")
+      }
+    }  
+
+    
+  }
+}
+
+--------------------------------------------------------------------------------------------------------------------
+
+programa {
+
+  inclua biblioteca Util --> u
+  inteiro nomeMatriz[50][50]
+
+
+  funcao inicio() {
+    para(inteiro i = 0; i < 50; i++){
+      para(inteiro j = 0; j < 50; j++){
+        nomeMatriz[i][j] = u.sorteia(0,1)
+        escreva(" " ,nomeMatriz[i][j], " ")     
+      }
+        escreva("\n")
+        u.aguarde(100)
+        
+    }  
+   
+  }
+}
