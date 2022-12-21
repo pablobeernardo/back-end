@@ -1,0 +1,217 @@
+programa {
+
+  
+  inteiro matrizGlobal[5][5]
+  inteiro const num0 = 0
+  inteiro const num1 = 1
+
+
+
+  funcao inteiro criandoMatriz(){
+    para(inteiro i = 0; i < 5; i++){
+      para(inteiro j = 0; j < 5; j++){
+        se(i == j){
+          matrizGlobal[i][j] = 1
+        }
+        senao{
+          matrizGlobal[i][j] = 0
+        }
+      }
+    }
+  }  
+
+  funcao inteiro mostrarMatriz(){
+    para(inteiro i = 0; i < 5; i++){
+      para(inteiro j = 0; j < 5; j++){
+      
+         escreva(" " ,matrizGlobal[i][j], " ")    
+      }  
+          escreva("\n")
+    }
+  }
+
+
+
+  funcao inicio() {
+    criandoMatriz()
+    mostrarMatriz()
+  }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+programa {
+
+  
+  inteiro matrizGlobal[5][5]
+  inteiro const num0 = 0
+  inteiro const num1 = 1
+
+
+
+  funcao inteiro criandoMatriz(){
+    para(inteiro i = 0; i < 5; i++){
+      para(inteiro j = 0; j < 5; j++){
+        se(i == j){
+          matrizGlobal[i][j] = 1
+        }
+        senao{
+          matrizGlobal[i][j] = 0
+        }
+      }
+    }
+  }  
+
+  funcao inteiro mostrarMatriz(){
+    para(inteiro i = 0; i < 5; i++){
+      para(inteiro j = 0; j < 5; j++){
+      
+         escreva(" " ,matrizGlobal[i][j], " ")    
+      }  
+          escreva("\n")
+    }
+  }
+
+
+
+  funcao inicio() {
+    criandoMatriz()
+    mostrarMatriz()
+  }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+programa {
+
+  
+  inteiro matrizGlobal[5][5]
+  inteiro const num0 = 0
+  inteiro const num1 = 1
+
+
+
+  funcao inteiro criandoMatriz(){
+    para(inteiro i = 0; i < 5; i++){
+      para(inteiro j = 0; j < 5; j++){
+        se(4-i == j){
+          matrizGlobal[i][j] = 1
+        }
+        senao{
+          matrizGlobal[i][j] = 0
+        }
+      }
+    }
+  }  
+
+  funcao inteiro mostrarMatriz(){
+    para(inteiro i = 0; i < 5; i++){
+      para(inteiro j = 0; j < 5; j++){
+      
+         escreva(" " ,matrizGlobal[i][j], " ")    
+      }  
+          escreva("\n")
+    }
+  }
+
+
+
+  funcao inicio() {
+    criandoMatriz()
+    mostrarMatriz()
+  }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+programa {
+
+  
+  inteiro matrizGlobal[5][5]
+  inteiro const num0 = 0
+  inteiro const num1 = 1
+
+
+
+  funcao inteiro criandoMatriz(){
+    para(inteiro i = 0; i < 5; i++){
+      para(inteiro j = 0; j < 5; j++){
+        se(i == j){
+          matrizGlobal[i][j] = 1
+        }
+        senao se(4-i == j){
+          matrizGlobal[i][j] = 1
+        }
+        senao{
+          matrizGlobal[i][j] = 0
+        }
+      }
+    }
+  }  
+
+  funcao inteiro mostrarMatriz(){
+    para(inteiro i = 0; i < 5; i++){
+      para(inteiro j = 0; j < 5; j++){
+      
+         escreva(" " ,matrizGlobal[i][j], " ")    
+      }  
+          escreva("\n")
+    }
+  }
+
+
+
+  funcao inicio() {
+    criandoMatriz()
+    mostrarMatriz()
+  }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+programa {
+
+  
+  cadeia matrizGlobal[8][8] = {{0,0,1,1,1,1,0,0},{0,1,0,0,0,0,1,0},{1,0,1,0,0,1,0,1},{1,0,0,0,0,0,0,1},{1,0,1,0,0,1,0,1},{1,0,0,1,1,0,0,1},{0,1,0,0,0,0,1,0},{0,0,1,1,1,1,0,0}}
+  
+  funcao inteiro mostrarMatriz(){
+    para(inteiro i = 0; i < 8; i++){
+      para(inteiro j = 0; j < 8; j++){
+        se(matrizGlobal[i][j] == "1"){
+          escreva("*")
+        }
+        senao{
+          escreva(" ")
+        }               
+      }  
+          escreva("\n")
+    }
+  }
+
+  funcao inicio() {
+    mostrarMatriz()
+  }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+programa {
+
+  
+  cadeia matrizGlobal[8][8] = {{0,1,1,1,1,1,1,0},{1,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,1},{1,1,1,1,1,1,1,1},{1,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,1}}
+  
+  funcao inteiro mostrarMatriz(){
+    para(inteiro i = 0; i < 8; i++){
+      para(inteiro j = 0; j < 8; j++){
+        se(matrizGlobal[i][j] == "1"){
+          escreva("*")
+        }
+        senao{
+          escreva(" ")
+        }               
+      }  
+          escreva("\n")
+    }
+  }
+
+  funcao inicio() {
+    mostrarMatriz()
+  }
+}
