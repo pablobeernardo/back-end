@@ -215,3 +215,30 @@ programa {
     mostrarMatriz()
   }
 }
+
+---------------------------------------------------------------------------------------------------------
+exercicio para casa - Letra do nome
+
+programa {
+
+  
+  cadeia matrizGlobal[8][8] = {{1,1,1,1,1,1,1,1},{1,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,1},{1,1,1,1,1,1,1,1},{1,0,0,0,0,0,0,0},{1,0,0,0,0,0,0,0},{1,0,0,0,0,0,0,0}}
+  
+  funcao inteiro mostrarMatriz(){
+    para(inteiro i = 0; i < 8; i++){
+      para(inteiro j = 0; j < 8; j++){
+        se(matrizGlobal[i][j] == "1"){
+          escreva("*")
+        }
+        senao{
+          escreva(" ")
+        }               
+      }  
+          escreva("\n")
+    }
+  }
+
+  funcao inicio() {
+    mostrarMatriz()
+  }
+}
