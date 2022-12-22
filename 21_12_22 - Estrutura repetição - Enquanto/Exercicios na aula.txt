@@ -1,0 +1,55 @@
+programa {
+
+  cadeia matrizGlobal[2][2] = {{" "," "},{" "," "}}
+  cadeia nome
+  cadeia controleRepeticao
+  inteiro linha
+  inteiro coluna
+  logico obterInfo = verdadeiro
+
+  funcao obterInformacoes(){
+    enquanto(obterInfo){
+      escreva("Digite seu nome: ")
+      leia(nome)
+
+      escreva("Digite a linha: ")
+      leia(linha)
+      
+      escreva("Digite a coluna: ")
+      leia(coluna)
+     
+      escreva("Deseja continuar? (s/n): ")
+      leia(controleRepeticao)
+
+      matrizGlobal[linha][coluna] = nome
+      
+      se(controleRepeticao == "n"){
+        obterInfo = falso 
+      } 
+    
+      
+    }
+      imprimirMatriz()
+  }
+
+  funcao imprimirMatriz(){
+    para(inteiro i = 0; i < 2; i++){
+      para(inteiro j = 0; j < 2; j++){
+            se(matrizGlobal[i][j] != " "){
+                escreva(matrizGlobal[i][j])
+            } 
+              senao{
+                escreva("x")
+              }
+      }             
+      escreva("\n")
+    }     
+    
+  }
+
+
+
+  funcao inicio() {
+    obterInformacoes()
+  }
+}

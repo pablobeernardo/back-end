@@ -1,0 +1,49 @@
+programa {
+
+  inteiro i 
+  logico pararPrograma = verdadeiro
+
+  funcao inicio() {
+    
+    enquanto(pararPrograma){
+      escreva(" Qual a opção que você deseja: [1] - Continuar ou [2] Finalizar programa: ")
+      leia(i)
+
+      se(i == 2){
+        pararPrograma = falso
+      }
+    }
+    
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+programa {
+
+  inteiro opcao
+  logico pararPrograma = verdadeiro
+
+
+  funcao inicio() {
+    enquanto(pararPrograma){
+      escreva("Digite a opção: [1] Marcar entrada - [2] Marcar saída para o almoço - [3] Marcar saída do trabalho: - [0] Sair da repetição: ")
+      leia(opcao)
+      
+        se(opcao == 1){
+            escreva("Bem Vindo \n")
+        } senao se(opcao == 2){
+             escreva("Bom Almoço \n")
+          } senao se(opcao == 3){
+                escreva("Bom Descanso \n")
+            } senao se(opcao == 0){
+                pararPrograma = falso    
+              }   senao{
+                escreva("Opção inválida! \n")
+              } 
+    }              
+
+  }
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
