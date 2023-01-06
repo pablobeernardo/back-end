@@ -1,0 +1,103 @@
+                                            DML - DATA MANIPULATION LANGUAGE    (MANIPULAR DADOS)
+
+SELECT - Serve para trazer os dados das tabelas
+    EX: 
+    SELECT *(todos os campos) FROM(aponta para a tabela) FUNCIONÁRIOS(tabela) -  (Serve para trazer todos os regitros)
+
+    SELECT *(todos os campos) FROM(aponta para a tabela)  FUNCIONÁRIOS(tabela) WHERE ID = 1 (somente do ID = 1)
+
+    ex: select * from funcionarios
+        where id=2 and id=3
+
+    Nome do comando: SELECT
+    Campos: *, id, Nome
+    Opcional: where
+
+    Obs: WHERE --> Onde eu utilizo:
+    - Select 
+    - Update
+    - Delete 
+    
+
+
+UPDATE - Serve para atualizar um registro ou  vários na tabela 
+    Ex: UPDATE FROM PF
+        SET NOME = 'Nome Qualquer', IDADE = 23
+        WHERE CPF = '000000000'
+
+    UPDATE FROM [tabela] SET [campo] = [valor]
+    WHERE [Opcional]
+    Ex: update from funcionarios set nome = 'Maria'
+    where nome = 'Marcos'
+
+INSERT -  Serve para inserir um registro na tabela
+
+DELETE - Serve para excluir um registo da tabela 
+    DELETE FROM [tabela]
+    WHERE [Opcional]
+
+    Nome do comando: DELETE
+    opcional: WHERE    
+
+                                            DDL - DATA DEFINITION LANGUAGE    (DEFINIR ESTRUTURAS)
+
+CREATE - Criar (tabela, indice, usuario e etc)                                            
+ALTER - Alterar (tabela, campos da tabela, usuario, banco de dados)
+DROP - Apagar (tabela, banco de dados, usuario e etc)
+
+
+Criar banco de dados -
+create(criar) database(banco de dados) ----(nome do banco)
+
+Criar tabela -
+create(criar) table(tabela) ----(nome da tabela)(
+    [nome da coluna] [tipo da coluna],
+    [nome da coluna] [tipo da coluna],
+    [nome da coluna] [tipo da coluna]
+ou seja:
+    id integer,
+    nome character varying,
+    cpf char(11),
+    nascimento date
+)  
+
+Alterar tabela - 
+
+ALTER TABLE funcionarios
+    ALTER COLUMN id SET NOT NULL;
+
+ALTER TABLE funcionarios
+    ALTER COLUMN nome SET NOT NULL;
+
+ALTER TABLE funcionarios
+    ALTER COLUMN cpf SET NOT NULL;
+
+ALTER TABLE funcionarios
+    ALTER COLUMN nascimento SET NOT NULL;
+
+ALTER TABLE funcionarios
+    ADD PRIMARY KEY (id);
+
+Apagar tabela -
+
+Drop table funcionarios(nome da tabela)
+
+
+CRIAR TABELA COM TODAS AS COLUNAS: 
+
+CREATE TABLE funcionarios
+(
+    id integer NOT NULL,
+    nome character varying NOT NULL,
+    cpf character varying(11) NOT NULL,
+    nascimento date NOT NULL,
+    PRIMARY KEY (id)
+);
+
+ADICIONANDO CAMPO NA TABELA
+    ALTER TABLE funcionarios
+    ADD COLUMN telefone character varying(11)
+
+REMOVENDO CAMPO NA TABELA
+    ALTER TABLE funcionarios
+    DROP COLUMN telefone
