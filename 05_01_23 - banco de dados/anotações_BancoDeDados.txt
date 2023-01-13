@@ -101,3 +101,12 @@ ADICIONANDO CAMPO NA TABELA
 REMOVENDO CAMPO NA TABELA
     ALTER TABLE funcionarios
     DROP COLUMN telefone
+    
+    
+    
+    
+    ADICIONANDO CHAVE ESTRANGEIRA ( pelo Alter Table )
+    alter table matricula
+    add constraint DISCIPLINA_ID_FK
+    foreign key (disciplina_id)
+    references disciplina(id)
